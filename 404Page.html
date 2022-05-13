@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        div.container{
+            width: 1160px;
+            height: 600px;
+            margin: 60px auto;
+            padding: 103.3px 193.1px 123.3px 193px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16);
+            border: solid 1px #e1e1e1;
+            background-image: linear-gradient(to right, #ffffff 0%, #f8f8f8 100%);
+        }
+
+        .logo{
+            width: 291.4px;
+          height: 58px;
+           margin: 58.3px 42.4px 56.5px 0;
+             object-fit: contain;
+
+        }
+        h2{
+            width: 232px;
+            height: 33px;
+            margin: 56.5px 41.9px 56.5px 59.9px;
+            object-fit: contain;
+            font-family: Montserrat;
+            font-size: 27px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.74;
+            letter-spacing: 0.19px;
+            text-align: left;
+            color: #3b3b3b;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        .button{
+            display: flex;
+            flex-direction: column;
+            border: black solid 1.5px;
+            border-radius: 5px;
+            cursor: pointer;
+       }
+
+        .button-1{
+                width: 164.4px;
+                height: 35px;
+                margin: 56.5px 42.4px 10px 127.4px;
+                object-fit: contain;
+                background: linear-gradient(-45deg,#4f64d9,#219cd9);
+                text-align: center;
+
+        }
+        
+
+        .button-2{
+              width: 164.4px;
+              height: 28px;
+              margin: 10px 41.9px 38.3px 127.4px;
+              object-fit: contain;
+
+        }
+
+
+        .img-404{
+            width: 440.1px;
+            height: 373.5px;
+            margin: 0 0 0 41.9px;
+            object-fit: contain;
+            position: relative;
+            left: 25rem;
+            bottom: 25rem;
+        }
+
+        .mainPage{
+            margin: 3px auto;
+            width: 140.9px;
+            height: 20px;
+            font-size: 15px; 
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.53;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #ffffff;
+            font-family: Montserrat;
+        }
+
+        .back{
+            margin: 3px auto;
+            width: 42px;
+             height: 18px;
+           object-fit: contain;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.64;
+           letter-spacing: normal;
+           text-align: center;
+           color: #123343;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">  <img src="logo/ProysPanel Black Logo (1).svg" alt="Proys Panel Logo"></div>
+        <h2>Page Not Found</h2>
+        <button class="button button-1" id="result" type="button" onclick="load()" > <span class="mainPage" >MAIN PAGE</span> </button>
+        <button class="button button-2"  type="button"> <span class="back"> BACK </span> </button>
+        <img class="img-404" src="logo/404.svg" alt="404 Logo"> 
+    </div>
+    
+
+    <script >
+        /*
+     const mainPage =document.querySelector('#result');
+     console.log(mainPage);
+     var result;
+     result=document.getElementById('result');
+     result.innerHTML=
+     "window.location.href = "+window.location.href+"<br>"+
+     "window.location.hostname = "+window.location.hostname+"<br>"+
+     "window.location.pathname = "+window.location.pathname+"<br>"+
+     "window.location.protocol = "+window.location.protocol+"<br>"+
+     "window.location.port = "+window.location.port+"<br>";
+    */
+    function load(){
+       var href = window.location.href;
+       var hostname = window.location.hostname;
+       var pathname = window.location.pathname;
+       var protocol = window.location.protocol;
+       var port = window.location.port;
+       // window.location.assign(hostname);
+      //  window.location.pathname=;
+        window.location.href=hostname;
+        
+      
+
+    }
+ 
+</script>
+</body>
+</html>
